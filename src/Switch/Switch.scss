@@ -1,0 +1,23 @@
+.Switch {
+    width: 90px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    background: green;
+    .Handle {
+        float: left;
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+        background: white;
+        margin: 3px;
+    }
+    &--disabled {
+        @extend .Switch;
+        background: red;
+        opacity: 0.9;
+        .Handle {
+            float: right;
+        }
+    }
+}
